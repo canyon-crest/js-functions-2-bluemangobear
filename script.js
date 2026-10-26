@@ -58,7 +58,7 @@ function myFunc() {
 
 function getRandomNum(max) {
   // Write your code here
-  if (NaN(max) || max < 1) {
+  if (isNaN(max) || max < 1) {
     return 0;
   }
   return Math.floor(Math.random()*max)+1;
@@ -95,7 +95,7 @@ function distance(x1, y1, x2, y2) {
   let x = (x2 - x1) ** 2;
   let y = (y2 - y1) ** 2;
   let sum = x + y;
-  return Math.sqrt(sum.toFixed(2));
+  return Math.sqrt(sum).toFixed(2);
 }
 
 
